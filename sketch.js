@@ -4,7 +4,8 @@ var Engine = Matter.Engine,
     Bodies = Matter.Bodies; 
 var balls = [];
 var plinkos = [];
-var divisions =[];
+
+
 var ball;
 
 var divisionHeight=300;
@@ -19,7 +20,7 @@ function setup() {
   ground = new Ground(width/2,height,width,20);
 
    for (var k = 0; k <=width; k = k + 80) {
-     divisions.push(new Divisions(k, height-divisionHeight/2, 10, divisionHeight));
+     divisions.push(new divisions(k, height-divisionHeight/2, 10, divisionHeight));
    }
     for (var j = 75; j <=width; j=j+50) {
        plinkos.push(new Plinko(j,75));
